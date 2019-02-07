@@ -106,9 +106,7 @@ tr{
     border-bottom: 1px solid #f5f5f5;
 }
 
-.table-hover tbody tr:hover {
-    background-color: #FCFCFC;
-}
+
 
 .circle-id{
     display: inline-block;
@@ -128,7 +126,8 @@ tr{
     text-align: center;     
     background: #F8F8F8;  
     height: auto;
-    width: 100%;
+    width: 25px;
+    height: 25px;
 }
 
 .plus:hover{
@@ -136,8 +135,47 @@ tr{
     background: #555555;
 }
 
+.table-hover tbody tr:hover {
+    background-color: #FCFCFC;
+}
+
+.table-hover tbody tr:hover td > .name-store{
+    color: #A6E0BE;
+}
+
 .name-store{
     color : #000;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #424242;
+    border-color: #424242;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.page-link:hover{
+    color: #424242;
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 0.2rem rgba(66,66,66,.25);
+}
+
+.page-item.active .page-link:hover {
+    background-color: rgba(66,66,66,.89);
+    border-color: rgba(66,66,66,.89);
 }
 
 
