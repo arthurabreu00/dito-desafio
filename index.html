@@ -32,137 +32,149 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container mt-5">
+
+      <div class="content">
+        <!-- Cabeçalho -->
       <header class="item-search">
-        <h1>Pesquisa</h1>
-      </header>
-
-      <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> Ponto de venda </a>
+          <h1>Pesquisa</h1>
+        </header>
+  
+        <!-- Navbar-->
+        <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> Ponto de venda </a>
+              </div>
+        </nav>
+  
+  
+        <main class="main-search">
+          <!-- Dados das avaliações-->
+          <h2>Consolidação das lojas</h2>
+          <div class="row container list">
+            <div class="col-custom">
+              Satisfação
+              <span
+                class="fas fa-question-circle"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="O valor de Satisfação é tido como o percentual médio de notas ‘Excelente’ e ‘Muito bom’."
+              >
+              </span>
+              <p class="h3 status">82,1%</p>
             </div>
-          </nav>
-
-      <main class="main-search container">
-        <h2>Consolidação das lojas</h2>
-        <div class="row container">
-          <div class="col-custom">
-            Satisfação
-            <span
-              class="fas fa-question-circle"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="O valor de Satisfação é tido como o percentual médio de notas ‘Excelente’ e ‘Muito bom’."
-            >
-            </span>
-            <p class="h3 status">82,1%</p>
+  
+            <div class="col-custom">
+              Avaliações
+              <span
+                class="fas fa-question-circle"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Corresponde ao número de usuarios que realizam as Avaliações."
+              ></span>
+  
+              <p class="h3 status">1.289</p>
+            </div>
+  
+            <div class="col-custom">
+              Excelente
+  
+              <p class="h3 status"><i class="em em-heart_eyes"></i> 70%</p>
+            </div>
+  
+            <div class="col-custom">
+              Muito Bom
+  
+              <p class="h3 status"><i class="em em-grin"></i> 10%</p>
+            </div>
+            <div class="col-custom">
+              Razoavel
+  
+              <p class="h3 status"><i class="em em-neutral_face"></i> 10%</p>
+            </div>
+            <div class="col-custom">
+              Ruim
+  
+              <p class="h3 status">
+                <i class="em em-slightly_frowning_face"></i> 0,5%
+              </p>
+            </div>
+            <div class="col-custom">
+              Horrível
+              <p class="h3 status"><i class="em em-angry"></i> 9,5%</p>
+            </div>
           </div>
-
-          <div class="col-custom">
-            Avaliações
-            <span
-              class="fas fa-question-circle"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Corresponde ao número de usuarios que realizam as Avaliações."
-            ></span>
-
-            <p class="h3 status">1.289</p>
-          </div>
-
-          <div class="col-custom">
-            Excelente
-
-            <p class="h3 status"><i class="em em-heart_eyes"></i> 70%</p>
-          </div>
-
-          <div class="col-custom">
-            Muito Bom
-
-            <p class="h3 status"><i class="em em-grin"></i> 10%</p>
-          </div>
-          <div class="col-custom">
-            Razoavel
-
-            <p class="h3 status"><i class="em em-neutral_face"></i> 10%</p>
-          </div>
-          <div class="col-custom">
-            Ruim
-
-            <p class="h3 status">
-              <i class="em em-slightly_frowning_face"></i> 0,5%
-            </p>
-          </div>
-          <div class="col-custom">
-            Horrível
-
-            <p class="h3 status"><i class="em em-angry"></i> 9,5%</p>
-          </div>
-        </div>
-
-        <div class="mt-3 stores">
-          <h2>Lojas</h2>
-          <div class="row mt-4">
-            <div class="col-8 col-lg-3 col-sm-6 col-md-4">
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Buscar Loja"
-                  aria-label="Buscar Loja"
-                  aria-describedby="button-addon2"
-                />
-                <div class="input-group-append">
-                  <button
-                    class="btn btn-outline-secondary"
-                    type="button"
-                    id="button-addon2"
-                  >
-                   <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
+  
+          <!-- Visualizando loja indivudualmente. -->
+  
+          <div class="mt-3 stores">
+            <h2>Lojas</h2>
+            <div class="row mt-4">
+              <div class="col-8 col-lg-3 col-sm-6 col-md-4">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Buscar Loja"
+                    aria-label="Buscar Loja"
+                    aria-describedby="button-addon2"
+                  />
+                  <div class="input-group-append">
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      id="button-addon2"
+                    >
+                     <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <table class="table table-hover table-borderless">
-                <thead class="thead-gray ">
-                  <tr>
-                    <th scope="col" colspan="3" class="dropdown-toggle">Nome da loja </th>
-                    <th scope="col" class="dropdown-toggle">Satisfação </th>
-                    <th scope="col" class="dropdown-toggle">Avaliações </th>
-                    <th scope="col" class="dropdown-toggle">Excelente </th>
-                    <th scope="col" class="dropdown-toggle"> Muito Bom  </th>
-                    <th scope="col" class="dropdown-toggle">Razoável </th>
-                    <th scope="col" class="dropdown-toggle">Ruim </th>
-                    <th scope="col" class="dropdown-toggle">Horrível </th>
-                    <th scope="col" ></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row" colspan="3"> <span class="circle-id"> 1 </span> Icarai </td>
+  
+            <div class="table-responsive">
+                <table class="table table-hover table-borderless ">
+                    <thead class="thead-gray ">
+                      <tr>
+                        <th scope="col" colspan="3" class="dropdown-toggle">Nome da loja </th>
+                        <th scope="col" class="dropdown-toggle">Satisfação </th>
+                        <th scope="col" class="dropdown-toggle">Avaliações </th>
+                        <th scope="col" class="dropdown-toggle">Excelente </th>
+                        <th scope="col" class="dropdown-toggle"> Muito Bom  </th>
+                        <th scope="col" class="dropdown-toggle">Razoável </th>
+                        <th scope="col" class="dropdown-toggle">Ruim </th>
+                        <th scope="col" class="dropdown-toggle">Horrível </th>
+                        <th scope="col" ></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" colspan="3"> <span class="circle-id"> 1 </span> <span class="name-store"> Icarai </span>  </td>
+            
+                        <td>4,0%</td>
+                        <td>14</td>
+                        <td>90</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>
+                            <div class="plus">
+                              <i class="fas fa-plus"></i> 
+                            </div>
+                        </td>
+                      </tr>
+    
+                    </tbody>
+                  </table>
+            </div>
         
-                    <td>4,0%</td>
-                    <td>14</td>
-                    <td>90</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>
-                        div.
-                        <i class="fas fa-plus"></i> 
-                    </td>
-                  </tr>
-
-                </tbody>
-              </table>
-
-
-        </div>
-      </main>
-    </div>
+  
+  
+          </div>
+        </main>
+    
+      </div>
+      
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
