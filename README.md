@@ -32,6 +32,7 @@ Também é pedido para calcular o percentual de satisfação dos clientes. A som
 ## Tecnologias utilizadas
 
 - Bootstrap
+- Emoji CSS by afeld [emoji CSS](https://afeld.github.io/emoji-css/)
 - JavaScript Puro
 - CSS
 - Heroku (Utilizado como proxy)
