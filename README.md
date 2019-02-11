@@ -8,7 +8,7 @@ Uma especie "Pesquisa de Satisfação" . Um modulo que é responsável por conso
 dos nossos clientes avaliam sua experiência ao interagir com a marca.
 
 Tudo com base na tentativa de replicar, este protótipo (design):
-![protótipo](./img/DESAFIO DITO - Protótipo.png)
+![protótipo](./img/Protótipo.png)
 
 Os resultados apresentados deveriam ser vindos da API disponibilizada (endpoint): https://storage.googleapis.com/dito-questions/survey-responses.json
 
